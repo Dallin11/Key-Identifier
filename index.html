@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Document</title>
+</head>
+
+        <body>
+                <div id="i">
+                  Press a key<br/><span>And discover his keyCode to use it in your JavaScript projects.</span></div>
+                <div id="k"></div>
+                <script>
+                    var d = document,i=d.getElementById('i'),
+k = d.getElementById('k');
+
+d.onkeydown = d.body.onkeydown = function(e)
+{
+e = e || window.event;
+i.innerHTML = '';
+k.innerHTML = e.keyCode || e.which;
+return false;
+}
+                    </script>
+                    <a href="http://ripe-goat.surge.sh/">Back To Portfolio Site</a>
+    
+</body>
+</html>
